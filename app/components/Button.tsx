@@ -1,7 +1,9 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 interface buttonType {
-    type : "signin" | "logout";
+    type : "signin" | "logout"; 
+    children:ReactNode;
+
 
 }
 const Button = ({type}:buttonType) => {
